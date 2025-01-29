@@ -1,0 +1,27 @@
+<svg
+  xmlns="http://www.w3.org/2000/svg"
+  viewBox="0 0 64 64"
+  width="64"
+  height="64"
+>
+  <!-- Background Circle -->
+  <circle cx="32" cy="32" r="32" fill="#4F46E5" />
+
+  <!-- Shopping Cart Body -->
+  <path
+    d="M22 42a4 4 0 1 1-8 0 4 4 0 0 1 8 0zm20 0a4 4 0 1 1-8 0 4 4 0 0 1 8 0zM16 26h32l-4 12H20l-4-12z"
+    fill="#FFFFFF"
+  />
+  <path
+    d="M16 26l-4-8H8m8 8h32l-4 12H20l-4-12z"
+    stroke="#FFFFFF"
+    stroke-width="2"
+    stroke-linecap="round"
+    stroke-linejoin="round"
+  />
+
+  <!-- Multiple Dots (Representing Vendors) -->
+  <circle cx="12" cy="12" r="2" fill="#FFFFFF" />
+  <circle cx="20" cy="12" r="2" fill="#FFFFFF" />
+  <circle cx="28" cy="12" r="2" fill="#FFFFFF" />
+</svg>
