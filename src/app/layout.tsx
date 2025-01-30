@@ -8,6 +8,9 @@ import "./globals.css";
 // Theme Provider
 import { ThemeProvider } from "next-themes";
 
+// Clerk provider
+import { ClerkProvider } from '@clerk/nextjs'
+
 // Fonts
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -37,7 +40,8 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
+    <ClerkProvider>
+      <html lang="en">
       <head>
         {/* Add the SVG favicon link */}
         <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
@@ -54,5 +58,6 @@ export default function RootLayout({
         </ThemeProvider>
       </body>
     </html>
+    </ClerkProvider>
   );
 }
