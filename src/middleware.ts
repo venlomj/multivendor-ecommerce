@@ -1,5 +1,6 @@
 import { clerkMiddleware, createRouteMatcher } from "@clerk/nextjs/server";
 
+// eslint-disable-next-line @typescript-eslint/no-unused-vars
 export default clerkMiddleware(async (auth, req, next) => {
   const protectedRoutes = createRouteMatcher(["/"]);
   if (protectedRoutes(req)) await auth.protect();
